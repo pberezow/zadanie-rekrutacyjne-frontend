@@ -2,4 +2,4 @@ build:
   docker:
     web: ./Dockerfile
 run:
-  web: serve -s build -l $PORT
+  web: serve -s /app/build -l $PORT

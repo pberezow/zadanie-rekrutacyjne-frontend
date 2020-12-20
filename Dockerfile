@@ -42,10 +42,12 @@ RUN npm install \
 FROM node:13.12.0-alpine as final
 
 WORKDIR /app
-COPY --from=builder /code/build ./build
+COPY --from=builder /code/build ./
+
+COPY ./.env* ./
 
 RUN npm install -g serve
 
-EXPOSE 8080
+EXPOSE $PORT
 
-ENTRYPOINT serve -s build -l 8080
+ENTRYPOINT serve -s /app/build -l $PORT
