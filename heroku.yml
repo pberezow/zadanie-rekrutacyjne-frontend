@@ -2,4 +2,4 @@ build:
   docker:
     frontend: ./Dockerfile
 run:
-  frontend: serve -s build -l 8080
+  frontend: serve -s build -l $PORT
