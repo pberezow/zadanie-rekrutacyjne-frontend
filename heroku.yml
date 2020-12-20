@@ -1,5 +1,5 @@
 build:
   docker:
-    frontend: ./Dockerfile
+    web: ./Dockerfile
 run:
-  frontend: serve -s build -l $PORT
+  web: serve -s build -l $PORT
