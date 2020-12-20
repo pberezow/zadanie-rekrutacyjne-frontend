@@ -46,4 +46,6 @@ COPY --from=builder /code/build ./build
 
 RUN npm install -g serve
 
+EXPOSE 8080
+
 ENTRYPOINT serve -s build -l 8080
