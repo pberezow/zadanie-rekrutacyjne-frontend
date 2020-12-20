@@ -34,7 +34,13 @@ const MainContainer = ({children, footer, language}) => {
                         </Header>
     
                         <Segment stacked >
-                        
+
+                            <p>Projekt znajduje się w dwóch repozytoriach: 
+                                <br/>backend: <a href="https://github.com/pberezow/zadanie-rekrutacyjne-backend">https://github.com/pberezow/zadanie-rekrutacyjne-backend</a>
+                                <br/>frontend: <a href="https://github.com/pberezow/zadanie-rekrutacyjne-frontend">https://github.com/pberezow/zadanie-rekrutacyjne-frontend</a>
+                            </p>
+                            <p>Api odpowiada pod adresem: <a href="https://zadanie-rekrutacyjne-backend.herokuapp.com">https://zadanie-rekrutacyjne-backend.herokuapp.com</a></p>
+                            <p>Specyfikacja api znajduje się na githubie w README</p>
                         </Segment>
                     </Grid.Column>
                 </Grid>
