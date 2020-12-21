@@ -54,7 +54,7 @@ export const addBook = (payload) => {
 }
 
 export const importBooks = (query) => {
-    return api().get(BOOKS_IMPORT_RESOURCE_PATH.concat('?q=').concat(query))
+    return api().put(BOOKS_IMPORT_RESOURCE_PATH.concat('?q=').concat(query))
         .then(response => true)
 }
 
